@@ -82,13 +82,19 @@
         <!--About Us-->
         <h1><a name="overview">What Is MaterialsMine?</a></h1>
         <p>MaterialsMine is a web-based data resource designed and built for the materials research community.</p>
+        <br>
         <p>The objectives of MaterialsMine include:
             <ul>
-                <li>Curating experimental and simulation data into a structured, machine-readable format</li>
+                <li>Curating experimental and simulation data into structured, machine-readable formats</li>
                 <li>Providing an interface for researchers to retrieve materials data</li>
+                <li>Developing analysis tools that enable quantification of image data</li>
                 <li>Enabling data-driven tools for materials property prediction and design</li>
             </ul>
         </p>
+        <br>
+        <p>Scroll down to read case studies in both nanocomposite materials (<b>NanoMine</b>) and mechanical metamaterials (<b>MetaMine</b>).</p>
+
+        <br>
 
         <br><br><a href="#top">Return to infographic</a>
 
@@ -98,16 +104,31 @@
       
         <!--Case Studies-->
         <h1>Case Studies in Polymer Nanocomposites and Metamaterials</h1>
-        <p>Data from the knowledge graph were used in order to .... </p>
+        <p>
+            The following case studies demonstrate knowledge creation through both <strong>big</strong> data (simulation data of mechanical metamaterials)
+            and <em>broad</em> data (experimental data of polymer nanocomposites).</p>
         <br>
         <h2>NanoMine Case Study</h2>
-        <br><br>
+        <br>
         <img src="./images/NMcasestudy.png">
+        <br>
+        <p>
+            In mechanical analysis, the <em>tan &delta;</em> peak is known to decrease as a function of increasing filler content.
+            However, upon aggregating the tan &delta; peak from many datasets, any downward trend was negated by variability in the
+            underlying data. By including quantitative descriptors that describe how well the nanoparticle fillers are dispersed within the matrix,
+            the underlying trends were unveiled. These results point to the importance of quantitative descriptors derived from image data.</p>
         <br><br>
         <h2>MetaMine Case Study</h2>
-        <br><br>
+        <br>
         <img src="./images/MMcasestudy.png">
-        <br><br>
+        <br>
+        <p>
+            Using modern computational tools to develop structure-property models for mechanical metamaterials can accelerate the development of these materials.
+            Mechanical behavior of metamaterials&mdash;determined by their constituent materials as well as their intricate structure&mdash;are difficult to predict
+            without performing computationally expensive simulations. By feeding large datasets of 2-D and 3-D metamaterials and their simulated property information, 
+            machine learning methods reveal relationships between the geometric facets of the structure and the properties of the metamaterial. 
+        </p>
+        <br>
         
         <br><br><a href="#top">Return to infographic</a>
         <br>
@@ -116,10 +137,22 @@
 
         <!--Data Curation-->
         <h1><a name="curation">Data Curation</a></h1>
-        <p>Curation of semi-structured data from publications into a structured format for NanoMine involves... </p>
-        <br><br>
+        <p>
+            In order to apply data-driven tools, data must be <em>curated</em> into the system in structured, machine-readable formats.
+        </p>
+        <p>
+            Curation of semi-structured data from a variety of sources (e.g., publications, datasets provided by researchers) into a structured format
+            involves assigning the appropriate labels as metadata to the individual datasets. These labels are defined within a <em>schema</em>.            
+        </p>
+        <p>
+            To map datasets into the schema, configurable MS Excel templates have been created. These enable researchers to curate their own data into
+            the system. A set of scripts parse the Excel templates, perform data validation checks, and map the data into XML files.
+        </p>
+        <br>
         <img src="./images/curation.png">
-        <br><br>
+        <br>
+        
+        <br>
         
         <br><br><a href="#top">Return to infographic</a>
         
@@ -129,12 +162,22 @@
 
         <!--Materials Knowledge Graph-->
         <h1><a name="knowledgegraph">Materials Knowledge Graph</a></h1>
-        <p>MaterialsMine data is ultimately stored as a knowledge graph, a multitude of nodes with edges describing the relationships between nodes.
-            Nodes and edges have unique identifiers (URIs), making all relationships unambiguous and machine-readable.
+        <p>
+            A <em>knowledge graph</em> is a collection of node&mdash;and edges describing the relationships between nodes&mdash;that together create a formal
+            representation of knowledge within a domain.
         </p>
-        <br><br>
+        <br>
         <img src="./images/ontology.png">
-        <br><br>
+        <br>
+        <p>
+            MaterialsMine data is ultimately stored as a knowledge graph. The underlying structure of the knowledge graph is defined by an <em>ontology</em>.
+            Initially built as an ontology for polymer nanocomposites, the ontology is currently being extended to mechanical metamaterials.
+        </p>
+        <p>
+            In the knowledge graph, nodes and edges have unique identifiers (URIs), making all relationships unambiguous and machine-readable. Information is 
+            stored in RDF triples, which are more flexible than conventional data structures.
+        </p>
+        <br>
 
         <br><br><a href="#top">Return to infographic</a>
         
@@ -144,12 +187,21 @@
     
         <!--Search & Visualization-->
         <h1><a name="searchviz">Search & Visualization</a></h1>
-        <p>To query data within MaterialsMine, a faceted browser enables the selection of parameters of interest.</p>
-        <p>For users familiar with RDF and the semantic web, MaterialsMine also features a <a href="https://materialsmine.org/wi/sparql.html">SPARQL endpoint</a>
-        for querying the Knowledge Graph directly.</p>
-        <br><br>
+        <p>
+            To view and interact with data in the knowledge graph, search and visualization tools are being developed.
+        </p>
+        <br>
         <img src="./images/searchviz.png">
-        <br><br>
+        <br>
+        <p>
+            To query data within MaterialsMine, a faceted browser enables selection of parameters of interest. Once data are pulled from the knowledge graph,
+            the user can create visualizations depending on the types of data that were queried.
+        </p>
+        <p>
+            For users familiar with RDF and the semantic web, MaterialsMine also features a <a href="https://materialsmine.org/wi/sparql.html">SPARQL endpoint</a>
+            for querying the Knowledge Graph directly.
+        </p>
+        <br>
         
         <br><br><a href="#top">Return to infographic</a>
         
@@ -159,13 +211,19 @@
 
         <!--Analysis & Simulation Tools-->
         <h1><a name="tools">Analysis & Simulation Tools</a></h1>
-        <p>A suite of modular tools enable researchers to apply data-driven tools directly to their data.</p>
-        <p>For example, the Microstructure Characterization & Reconstruction tool provides quantitative descriptors on microscope images (e.g. TEM) to quantify
-            dispersion parameters associated with the image. These descriptors provide a basis for further analysis.
+        <p>
+            A suite of modular tools enable researchers to apply data-driven tools directly to their data.
         </p>
-        <br><br>
+        
+        <br>
         <img src="./images/MCR.png">
-        <br><br>
+        <br>
+        <p>
+            For example, the Microstructure Characterization & Reconstruction (MCR) tool provides quantitative descriptors on microscope images (e.g. TEM) to quantify
+            dispersion parameters associated with the image. These descriptors provide a basis for further analysis, and can be added as new knowledge within
+            the knowledge graph.
+        </p>
+        <br>
 
         <br><br><a href="#top">Return to infographic</a>
         
@@ -175,14 +233,22 @@
 
         <!--Data Storage-->
         <h1><a name="storage">Data Storage</a></h1>
-        <p>After being curated into XML files, data are stored in MongoDB. Conversion scripts map those XML data into RDF format.</p>
-        
+        <p>
+            After being curated into XML files, data are stored in MongoDB. Conversion scripts map those XML data into RDF format for storage within the
+            knowledge graph.
+        </p>
+        <p>
+            When the schema is updated with new terms, these updates are made in the ontology as well as the RDF conversion scripts.
+        </p>
+        <p>
+            Ongoing work aims to streamline the process of adding new terminology to the ontology. Keeping in line with the Open World Assumption of the
+            semantic web, the schema and ontology should remain agile and flexible in accepting new terms as new knowledge and knowledge representations
+            are created.
+        </p>
         
         <br><br><a href="#top">Return to infographic</a>
         
-        <br>
-        <br>
-        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <!--Image-map containing links to specific sections of the page-->
         <map name="image-map">
@@ -193,7 +259,9 @@
             <area target="" alt="Analysis &amp; Simulation Tools" title="Creating Tools that Generate New Metadata" href="#tools" coords="359,699,708,692,698,439,591,442,548,552,368,587" shape="poly">
             <area target="" alt="Search &amp; Visualization" title="How Users Can Interact with the Data" href="#searchviz" coords="705,5,396,7,402,171,612,315,708,311" shape="poly">
         </map>
-
+        <br>
+        <br>
+        <br>
         <footer>© 2014-2020 MaterialsMine | NanoMine | MetaMine</footer>
     </body>
 </html>
