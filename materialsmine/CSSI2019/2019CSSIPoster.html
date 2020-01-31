@@ -12,7 +12,7 @@
                 color:darkblue;
             }
 
-            p,li,summary,a,footer {
+            p,li,summary,a,footer,h2 {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         </style>
@@ -20,10 +20,10 @@
     <body>
         <p><a name="top"></a></p>
 
-        <img src="https://drive.google.com/uc?export=view&id=1NTMBzS6ax6xL7Ict1GcYx2xfkuOB306q" usemap="#image-map">
+        <img src="./images/MM-overview-flowchart_v6_blank2.png" usemap="#image-map">
 
         <!--Link to full poster-->
-        <p>Download the <a href="">full CSSI poster</a> on Figshare.</p>
+        <p>Download the <a href="https://figshare.com/articles/NanoMetaMine_CSSI_Poster/11775057">full CSSI poster</a> on Figshare.</p>
 
         <!--Visit our website-->
         <p>Visit us at <a href="https://materialsmine.org/nm#/">www.MaterialsMine.org</a>.</p>
@@ -90,7 +90,7 @@
             </ul>
         </p>
 
-        <a href="#top">Return to infographic</a>
+        <br><br><a href="#top">Return to infographic</a>
 
         <br>
         <hr>
@@ -99,8 +99,17 @@
         <!--Case Studies-->
         <h1>Case Studies in Polymer Nanocomposites and Metamaterials</h1>
         <p>Data from the knowledge graph were used in order to .... </p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        <br>
+        <h2>NanoMine Case Study</h2>
+        <br><br>
+        <img src="./images/NMcasestudy.png">
+        <br><br>
+        <h2>MetaMine Case Study</h2>
+        <br><br>
+        <img src="./images/MMcasestudy.png">
+        <br><br>
+        
+        <br><br><a href="#top">Return to infographic</a>
         <br>
         <hr>
         <br>
@@ -108,8 +117,11 @@
         <!--Data Curation-->
         <h1><a name="curation">Data Curation</a></h1>
         <p>Curation of semi-structured data from publications into a structured format for NanoMine involves... </p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        <br><br>
+        <img src="./images/curation.png">
+        <br><br>
+        
+        <br><br><a href="#top">Return to infographic</a>
         
         <br>
         <hr>
@@ -120,8 +132,11 @@
         <p>MaterialsMine data is ultimately stored as a knowledge graph, a multitude of nodes with edges describing the relationships between nodes.
             Nodes and edges have unique identifiers (URIs), making all relationships unambiguous and machine-readable.
         </p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        <br><br>
+        <img src="./images/ontology.png">
+        <br><br>
+
+        <br><br><a href="#top">Return to infographic</a>
         
         <br>
         <hr>
@@ -132,8 +147,11 @@
         <p>To query data within MaterialsMine, a faceted browser enables the selection of parameters of interest.</p>
         <p>For users familiar with RDF and the semantic web, MaterialsMine also features a <a href="https://materialsmine.org/wi/sparql.html">SPARQL endpoint</a>
         for querying the Knowledge Graph directly.</p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        <br><br>
+        <img src="./images/searchviz.png">
+        <br><br>
+        
+        <br><br><a href="#top">Return to infographic</a>
         
         <br>
         <hr>
@@ -145,8 +163,11 @@
         <p>For example, the Microstructure Characterization & Reconstruction tool provides quantitative descriptors on microscope images (e.g. TEM) to quantify
             dispersion parameters associated with the image. These descriptors provide a basis for further analysis.
         </p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        <br><br>
+        <img src="./images/MCR.png">
+        <br><br>
+
+        <br><br><a href="#top">Return to infographic</a>
         
         <br>
         <hr>
@@ -155,8 +176,9 @@
         <!--Data Storage-->
         <h1><a name="storage">Data Storage</a></h1>
         <p>After being curated into XML files, data are stored in MongoDB. Conversion scripts map those XML data into RDF format.</p>
-        <br><br><br><br><br><br><br><br><br><p>[insert graphics]</p><br><br><br><br><br><br><br><br><br>
-        <a href="#top">Return to infographic</a>
+        
+        
+        <br><br><a href="#top">Return to infographic</a>
         
         <br>
         <br>
@@ -164,12 +186,12 @@
 
         <!--Image-map containing links to specific sections of the page-->
         <map name="image-map">
-            <area target="" alt="Overview" title="What Is MaterialsMine?" href="#overview" coords="1,1,380,80" shape="rect">
-            <area target="" alt="Curation" title="Data Curation" href="#curation" coords="2,145,2,287,55,535,167,539,184,405,186,335,229,263,207,150" shape="poly">
-            <area target="" alt="Data Storage" title="Data Storage" href="#storage" coords="1,585,319,721" shape="rect">
-            <area target="" alt="Knowledge Graph" title="Materials Knowledge Graph" href="#knowledgegraph" coords="180,566,559,571,574,499,608,455,575,294,428,207,303,247,236,284,195,342" shape="poly">
-            <area target="" alt="Analysis &amp; Simulation Tools" title="Analysis &amp; Simulation Tools" href="#tools" coords="361,727,738,728,724,455,621,455,568,581,363,586" shape="poly">
-            <area target="" alt="Search &amp; Visualization" title="Search &amp; Visualization" href="#searchviz" coords="407,4,396,169,634,319,742,319,732,3" shape="poly">
+            <area target="" alt="Overview" title="What Is MaterialsMine?" href="#overview" coords="2,4,371,76" shape="rect">
+            <area target="" alt="Curation" title="How We Curate Data" href="#curation" coords="0,148,1,279,30,364,33,456,77,528,140,533,177,459,173,361,213,279,210,151" shape="poly">
+            <area target="" alt="Data Storage" title="Where Data are Stored" href="#storage" coords="3,564,308,682" shape="rect">
+            <area target="" alt="Knowledge Graph" title="How Materials Knowledge Is Represented" href="#knowledgegraph" coords="364,215,213,299,184,361,185,448,201,541,540,542,546,473,581,435,546,309,443,240" shape="poly">
+            <area target="" alt="Analysis &amp; Simulation Tools" title="Creating Tools that Generate New Metadata" href="$tools" coords="359,699,708,692,698,439,591,442,548,552,368,587" shape="poly">
+            <area target="" alt="Search &amp; Visualization" title="How Users Can Interact with the Data" href="#searchviz" coords="705,5,396,7,402,171,612,315,708,311" shape="poly">
         </map>
 
         <footer>© 2014-2020 MaterialsMine | NanoMine | MetaMine</footer>
